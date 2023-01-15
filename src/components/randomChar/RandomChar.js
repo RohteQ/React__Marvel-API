@@ -36,7 +36,8 @@ class RandomChar extends Component {
 
     onCharLoading = () => {
         this.setState({
-            loading: true
+            loading: true,
+            error: false
         })
     }
 
@@ -65,8 +66,8 @@ class RandomChar extends Component {
         return (
             <div className="randomchar">
                 {errorMessage}
-                { spinner}
-                { content}
+                {spinner}
+                {content}
                 <div className="randomchar__static">
                     <p className="randomchar__title">
                         Random character for today!<br/>
